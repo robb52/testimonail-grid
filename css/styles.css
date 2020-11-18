@@ -6,19 +6,34 @@
 
 body {
   margin: 0;
-  
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background: rgb(206, 220, 244);
 }
 
 img {
-  width: 50vw;
+  display: block;
+  border-radius: 50%;
 }
 
 p,
 h2 {
   margin: 0;
-  padding: 0;
 }
 
 .container {
   display: grid;
+  width: 80vw;
+  margin: 2em auto;
+}
+
+.test {
+  border: 1px solid red;
+  margin: 1em 0;
+  border-radius: .5em;
+}
+
+.heading {
+  display: grid;
+  grid-template-columns: 20% 50%;
+  align-items: center;
 }
