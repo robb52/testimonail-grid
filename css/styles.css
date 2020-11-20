@@ -7,7 +7,7 @@
 body {
   margin: 0;
   font-family: 'Barlow Semi Condensed', sans-serif;
-  background: rgb(206, 220, 244);
+  background: rgb(228, 233, 244);
 }
 
 img {
@@ -37,10 +37,10 @@ p {
 }
 
 .test {
- 
   margin: 1em 0;
   border-radius: .5em;
   padding: 1.5em;
+  box-shadow: 10px 10px 20px #b3b2b2;
 }
 
 .test-content {
@@ -55,14 +55,12 @@ p {
   align-items: center;
 }
 
-
 .title p {
   font-weight: 600;
   font-size: 1rem;
   letter-spacing: 1px;
   margin: 1.3em 0;
 }
-
 
 .test-1 {
   background: #9053D0;
@@ -82,4 +80,37 @@ p {
 .test-4 {
   background: #080808;
   color: #fff;
+}
+
+.img-1{
+  border: 3px solid #cfadf2;
+}
+
+.img-2 {
+  border: 3px solid #939191;
+}
+
+.img-4 {
+  border: 3px solid  #9053D0;
+}
+
+@media(min-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 0 2em;
+  }
+
+  .test-1 {
+    grid-area: span 1 / span 2;
+  }
+
+  .test-5 {
+    grid-area: 1 / 4 / span 2 / span 1;
+  }
+
+  .test-4 {
+    grid-area: 2 / 2 / span 1 / span 2;
+  }
+
 }
