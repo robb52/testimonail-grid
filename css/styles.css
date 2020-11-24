@@ -48,23 +48,20 @@ p {
   letter-spacing: .5px;
 }
 
-.heading {
+.heading,
+.heading-1 {
   display: grid;
   grid-template-columns: 20% minmax(30%, 50%);
   gap: 1em;
   align-items: center;
 }
 
-.title p {
-  font-weight: 600;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  margin: 1.3em 0;
-}
-
 .test-1 {
-  background: #9053D0;
-  color: #fff;
+  background: #924adb;
+  color: #fff; 
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top 0 right 21%;
 }
 
 .test-2 {
